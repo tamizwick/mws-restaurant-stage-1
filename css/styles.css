@@ -3,18 +3,18 @@
 
 body,td,th,p{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 100%;
 	color: #333;
 	line-height: 1.5;
 }
 body {
-	background-color: #fdfdfd;
+	background-color: #f3f3f3;
 	margin: 0;
 	position:relative;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
+	font-size: 100%;
 	color: #333;
 }
 a {
@@ -38,29 +38,32 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
+  max-width: 85rem;
+  margin: 0 auto;
 }
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 8pt;
+  font-size: 70%;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  height: 80px;
+  height: 100%;
   background-color: #252831;
   text-align:center;
 }
 nav h1 {
   margin: auto;
+  padding: 1rem;
 }
 nav h1 a {
   color: #fff;
-  font-size: 14pt;
+  font-size: 80%;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -69,9 +72,9 @@ nav h1 a {
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
-    font-size: 17px;
+    font-size: 105%;
     margin: 0;
-    width: calc(50% - 80px);
+    width: calc(60% - 80px);
 }
 
 /* Display list items side by side */
@@ -106,13 +109,14 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
-  height: 50px;
+  height: 100%;
   background-color: #3397DB;
   align-items: center;
+  padding: 1.5rem 0;
 }
 .filter-options h2 {
   color: white;
-  font-size: 1rem;
+  font-size: 100%;
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
@@ -121,12 +125,12 @@ nav h1 a {
   background-color: white;
   border: 1px solid #fff;
   font-family: Arial,sans-serif;
-  font-size: 11pt;
+  font-size: 100%;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
   padding: 0 10px;
-  width: 200px;
+  width: 20%;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -134,16 +138,18 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 2rem 1rem 4rem;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
-  min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 0 2rem 1.5rem;
   text-align: left;
   width: 270px;
 }
@@ -152,13 +158,12 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
   min-width: 100%;
 }
 #restaurants-list li h1 {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 14pt;
+  font-size: 110%;
   font-weight: 200;
   letter-spacing: 0;
   line-height: 1.3;
@@ -167,14 +172,14 @@ nav h1 a {
 }
 #restaurants-list p {
   margin: 0;
-  font-size: 11pt;
+  font-size: 95%;
 }
 #restaurants-list li a {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
-  font-size: 10pt;
+  font-size: 95%;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
@@ -195,7 +200,7 @@ nav h1 a {
   position: fixed;
   right: 0;
   top: 80px;
-  width: 50%;
+  width: 40%;
 }
 .inside #map {
   background-color: #ccc;
@@ -205,12 +210,12 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
-  width: 50%;
+  width: calc(60% - 80px);
 }
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
-  font-size: 20pt;
+  font-size: 175%;
   font-weight: 200;
   letter-spacing: 0;
   margin: 15px 0 30px;
@@ -221,13 +226,13 @@ nav h1 a {
 	width: 90%;
 }
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 100%;
   margin: 10px 0px;
 }
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
+  font-size: 100%;
   font-weight: 300;
   letter-spacing: 10px;
   margin: 0 0 20px;
@@ -239,15 +244,15 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  padding: 130px 40px 30px;
+  width: 60%;
 }
 #reviews-container {
   padding: 30px 40px 80px;
 }
 #reviews-container h2 {
   color: #f58500;
-  font-size: 24pt;
+  font-size: 175%;
   font-weight: 300;
   letter-spacing: -1px;
   padding-bottom: 1pt;
@@ -272,4 +277,96 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+
+@media screen and (max-width: 900px) {
+    .filter-options select {
+        width: 30%;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+    .heading-spacer {
+        height: 115px;
+    }
+
+    .inside header {
+        z-index: 1500;
+    }
+
+    .inside #map-container {
+        position: static;
+        height: 350px;
+        width: 100%;
+    }
+
+    #breadcrumb, .inside #footer {
+        width: auto;
+        position: static;
+    }
+
+    #restaurant-container, #reviews-container {
+        width: 80%;
+        padding: 1.5rem 0 .5rem;
+        margin: 0 auto;
+    }
+
+    #restaurant-img, #restaurant-cuisine {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #restaurant-address {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav h1 {
+        padding: .5rem;
+    }
+
+    nav h1 a {
+        font-size: 60%;
+    }
+
+    .heading-spacer {
+        height: 100px;
+    }
+
+    .filter-options {
+        padding: .5rem 0;
+    }
+
+    .filter-options select {
+        width: 80%;
+    }
+
+    #restaurants-list li h1 {
+        font-size: 120%;
+    }
+
+    #restaurants-list li p {
+        font-size: 105%;
+    }
+
+    #restaurants-list li a {
+        font-size: 105%;
+    }
+
+    #footer, .inside #footer {
+        padding: 1.5rem .5rem;
+    }
+
+    #restaurant-img, #restaurant-cuisine {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .heading-spacer {
+        height: 140px;
+    }
 }
