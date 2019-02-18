@@ -133,6 +133,10 @@ nav h1 a {
   width: 20%;
 }
 
+.filter-options select:focus {
+    outline: 2px solid #252831;
+}
+
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
@@ -174,7 +178,7 @@ nav h1 a {
   margin: 0;
   font-size: 95%;
 }
-#restaurants-list li a {
+#restaurants-list li .view-details {
   background-color: orange;
   border-bottom: 3px solid #eee;
   color: #fff;
@@ -185,6 +189,10 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+#restaurants-list li .view-details:hover {
+    border-bottom: 3px solid #3397db;
 }
 
 /* ====================== Restaurant Details ====================== */
