@@ -1,4 +1,4 @@
-let currentCache = 'restaurant-review-v5'
+let currentCache = 'restaurant-review-v6'
 
 self.addEventListener('install', function(event) {
     event.waitUntil(

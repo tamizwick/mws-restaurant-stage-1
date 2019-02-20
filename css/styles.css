@@ -164,7 +164,7 @@ nav h1 a {
   max-width: 100%;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 110%;
@@ -177,6 +177,9 @@ nav h1 a {
 #restaurants-list p {
   margin: 0;
   font-size: 95%;
+}
+#restaurants-list li a:hover {
+    color: #f18200;
 }
 #restaurants-list li .view-details {
   background-color: orange;
@@ -193,6 +196,7 @@ nav h1 a {
 
 #restaurants-list li .view-details:hover {
     border-bottom: 3px solid #3397db;
+    color: #fff;
 }
 
 /* ====================== Restaurant Details ====================== */
